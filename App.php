@@ -12,7 +12,7 @@ use View\TodolistView;
 
 echo "Aplikasi Todolist" . PHP_EOL;
 
-$todolistRepository = new TodolistRepositoryImpl();
+$todolistRepository = new TodolistRepositoryImpl(); 
 $todolistService = new TodolistServiceImpl($todolistRepository);
 $todolistView = new TodolistView($todolistService);
 
